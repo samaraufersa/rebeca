@@ -4,6 +4,8 @@ import streamlit as st
 
 st.title('DASHCOVI - Um Painel de Informações sobre a COVID-19 em 2020')
 
+st.set_page_config(page_title="DASHCOVID", layout="wide")
+
 df = pd.read_csv('WHO_time_series.csv')
 
 fig1 = px.line(df, 
